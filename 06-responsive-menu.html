@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Menu</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 7%;
+            background: #172554;
+            color: white;
+        }
+
+        .logo {
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        .links {
+            display: flex;
+            gap: 25px;
+        }
+
+        .links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .links a:hover {
+            color: #93c5fd;
+        }
+
+        main {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            .links {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">MyWebsite</div>
+
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main id="home">
+        <h1>Welcome to My Website</h1>
+        <p>This navigation menu adjusts to different screen sizes.</p>
+    </main>
+
+    <section id="about"><h2>About</h2></section>
+    <section id="services"><h2>Services</h2></section>
+    <section id="contact"><h2>Contact</h2></section>
+</body>
+</html>

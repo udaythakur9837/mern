@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile Project</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            padding: 20px;
+            background: #eef2ff;
+            font-family: Arial, sans-serif;
+        }
+
+        .profile {
+            max-width: 380px;
+            width: 100%;
+            overflow: hidden;
+            background: white;
+            border-radius: 18px;
+            box-shadow: 0 10px 30px #182d501a;
+        }
+
+        .cover {
+            height: 115px;
+            background: linear-gradient(120deg, #2457a7, #7c8ff5);
+        }
+
+        .details {
+            padding: 0 25px 25px;
+            text-align: center;
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            margin-top: -50px;
+            border: 5px solid white;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        h1 { margin-bottom: 5px; }
+        .subtitle { color: #64748b; }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+            margin: 20px 0;
+        }
+
+        .skills span {
+            padding: 8px 12px;
+            background: #edf2ff;
+            color: #2457a7;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .contact {
+            display: block;
+            padding: 12px;
+            color: white;
+            background: #2457a7;
+            border-radius: 7px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <article class="profile">
+        <div class="cover"></div>
+
+        <div class="details">
+            <img class="avatar"
+                 src="https://placehold.co/200x200?text=U"
+                 alt="Profile picture placeholder">
+
+            <h1>Uday Thakur</h1>
+            <p class="subtitle">BCA Student | Web Development Learner</p>
+
+            <p>
+                I am interested in coding and technology.
+                I enjoy learning new concepts and applying them in projects.
+            </p>
+
+            <div class="skills">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Java</span>
+                <span>Python</span>
+            </div>
+
+            <a class="contact" href="mailto:your-email@example.com">
+                Get in Touch
+            </a>
+        </div>
+    </article>
+</body>
+</html>
