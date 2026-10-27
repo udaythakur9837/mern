@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #edf2f7;
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            width: 320px;
+            padding: 25px;
+            margin: 20px;
+            background: white;
+            text-align: center;
+            border: 1px solid #dce3eb;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px #26323818;
+        }
+
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .role {
+            color: #52657a;
+        }
+
+        .skills {
+            background: #e5efff;
+            color: #2457a7;
+            padding: 8px;
+            border-radius: 6px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 10px 20px;
+            background: #2457a7;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <article class="card">
+        <img class="profile-img"
+             src="https://placehold.co/200x200?text=Profile"
+             alt="Profile placeholder">
+
+        <h1>Uday Thakur</h1>
+        <p class="role">BCA Student</p>
+        <p>I enjoy learning coding and creating useful websites.</p>
+        <p class="skills">HTML | CSS | Java | Python</p>
+        <a class="button" href="mailto:your-email@example.com">Contact Me</a>
+    </article>
+</body>
+</html>

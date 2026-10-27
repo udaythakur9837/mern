@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            min-height: 100vh;
+        }
+
+        aside {
+            padding: 25px 18px;
+            background: #172554;
+            color: white;
+        }
+
+        aside a {
+            display: block;
+            margin: 20px 0;
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 30px;
+            min-width: 0;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .card {
+            padding: 22px;
+            background: white;
+            border-radius: 10px;
+        }
+
+        .card p {
+            color: #64748b;
+        }
+
+        .activity {
+            margin-top: 25px;
+            padding: 22px;
+            background: white;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 700px) {
+            .dashboard { grid-template-columns: 1fr; }
+
+            aside {
+                padding: 15px;
+            }
+
+            aside a {
+                display: inline-block;
+                margin: 10px;
+            }
+
+            main { padding: 18px; }
+
+            .cards { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <aside>
+            <h2>My Dashboard</h2>
+            <nav>
+                <a href="#overview">Overview</a>
+                <a href="#courses">My Courses</a>
+                <a href="#tasks">Assignments</a>
+                <a href="#settings">Settings</a>
+            </nav>
+        </aside>
+
+        <main>
+            <section id="overview">
+                <h1>Student Dashboard</h1>
+                <p>Welcome back! Here is your learning overview.</p>
+
+                <div class="cards">
+                    <article class="card">
+                        <h3>Courses</h3>
+                        <p>3 enrolled courses</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Assignments</h3>
+                        <p>5 sample assignments</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Progress</h3>
+                        <p>Learning in progress</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="activity" id="courses">
+                <h2>Recent Activity</h2>
+                <p id="tasks">Completed basic HTML practice.</p>
+                <p>Currently learning CSS layouts.</p>
+                <p id="settings">Next goal: build a responsive website.</p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
